@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+    <form method="POST" action="server-endpoint" onsubmit="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label>Name</label>
+        <input type="text" />
+        <br />
+        <label> Email</label>
+        <input type="email" />
+        <br />
+        <label> Company </label>
+        <select>
+          <option value="null">Select company</option>
+          <option value="SF">Surfboard</option>
+          <option value="RE">Raw Engineering</option>
+          <option value="CS">Contentstack</option>
+        </select>
+        <br />
+        <label> Gender</label>
+        <input type="radio" id="male" name="gender" value="M" />
+        <label for="male"> Male</label>
+        <input type="radio" id="female" name="gender" value="F" />
+        <label for="female"> Female</label>
+        <input type="radio" id="trans" name="gender" value="T" />
+        <label for="male"> Transgender</label>
+      </fieldset>
+      <fieldset id="business-need">
+        <label> Type of Business</label>
+        <input type="checkbox" id="service" name="business" value="RE" />
+        <label for="services">Services</label>
+        <input type="checkbox" id="product" name="business" value="CS" />
+        <label for="services">CMS</label>
+        <input type="checkbox" id="training" name="business" value="SB" />
+        <label for="services">Training</label>
+      </fieldset>
+      <fieldset>
+        <label for="subscribe">Subscribe to our newsletter</label>
+        <input type="checkbox" id="subscribe" checked />
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
